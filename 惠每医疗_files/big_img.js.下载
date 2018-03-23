@@ -1,0 +1,33 @@
+function show(index) //显示隐藏层和弹出层
+{
+	var hideobj = document.getElementById("hidebg_"+index);
+	hideobj.style.display = "block"; //显示隐藏层
+	hideobj.style.height = $(document).height() + "px"; //设置隐藏层的高度为当前页面高度
+//	document.getElementById("hidebox").style.display = "block"; //显示弹出层
+	$("#hidebox_"+index).fadeIn(2000)
+	var top = $(window).scrollTop()+($(window).height()*0.2);
+    $("#hidebox_"+index).css("top", top)
+}
+
+function hide(index) //去除隐藏层和弹出层
+{
+	document.getElementById("hidebg_"+index).style.display = "none";
+	document.getElementById("hidebox_"+index).style.display = "none";
+}
+
+function tel_show(index) //显示隐藏层和弹出层
+{
+	var hideobj = document.getElementById("tel_hidebg_"+index);
+	hideobj.style.display = "block"; //显示隐藏层
+	hideobj.style.height = document.body.clientHeight + "px"; //设置隐藏层的高度为当前页面高度
+	document.getElementById("tel_hidebox_"+index).style.display = "block"; //显示弹出层
+	var top = $(window).scrollTop()+($(window).height()*0.2);
+    $("#tel_hidebox_"+index).css("top", top)
+}
+
+function tel_hide(index) //去除隐藏层和弹出层
+{
+	document.getElementById("tel_hidebg_"+index).style.display = "none";
+	document.getElementById("tel_hidebox_"+index).style.display = "none";
+}
+
