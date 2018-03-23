@@ -505,7 +505,10 @@ table{ margin-top: 10px; border-collapse:collapse;}
             line-height: 28px;
             font-size: 14px;
             margin-left: 3.3em;
+            list-style-type: disc;
 
+        }
+        .tel_content div ol li{
             list-style-type: decimal
         }
     }
