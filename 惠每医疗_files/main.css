@@ -8,9 +8,7 @@ html,body{
     content: "";
     clear: both;
 }
-.fill-in-text{
-    display: none;
-}
+
 #w1200{
     margin: 0 auto;
     width: 1200px;
